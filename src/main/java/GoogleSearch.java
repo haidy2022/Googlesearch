@@ -37,12 +37,11 @@ public class GoogleSearch {
         searchInput.sendKeys("foodics");
         searchInput.sendKeys(Keys.RETURN);
 
-        //Step 3: Assert the number of results on the UI
-       /* WebElement resultsCount = driver.findElement(By.id("resultStats"));
+       /* //Step 3: Assert the number of results on the UI
+       WebElement resultsCount = driver.findElement(By.id("resultStats"));
         System.out.println("Number of results on the first page:");
         resultsCount.getText();
         Thread.sleep(5000);
-
 */
        // step4: Scroll down and go to the next page
         driver.findElement(By.tagName("body")).sendKeys(Keys.END);
